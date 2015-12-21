@@ -197,6 +197,16 @@ class SingleTableInheritanceTraitModelMethodsTest extends TestCase {
     $this->assertNull($newVehicle->cruft);
   }
 
+  public function testNewFromBuilderWithEnum() {
+    $video = new Video;
+    $attr = new \stdClass();
+    $attr->type = VideoType::MP4;
+
+    $newVideo = $video->newFromBuilder($attr);
+
+    $this->assertInstanceOf('Nanigans\SingleTableInheritance\Tests\Fixtures\MP4Video', $newVideo);
+  }
+  
   /**
    * @expectedException \Nanigans\SingleTableInheritance\Exceptions\SingleTableInheritanceException
    */
