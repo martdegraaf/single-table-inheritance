@@ -174,7 +174,7 @@ trait SingleTableInheritanceTrait {
 
     $classType = isset($attributes->$typeField) ? $attributes->$typeField : null;
 
-    if ($classType !=== null) {
+    if ($classType !== null) {
       $childTypes = static::getSingleTableTypeMap();
       if (array_key_exists($classType, $childTypes)) {
         $class = $childTypes[$classType];

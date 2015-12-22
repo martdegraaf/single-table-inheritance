@@ -8,6 +8,10 @@ use Nanigans\SingleTableInheritance\Tests\Fixtures\Car;
 use Nanigans\SingleTableInheritance\Tests\Fixtures\MotorVehicle;
 use Nanigans\SingleTableInheritance\Tests\Fixtures\Vehicle;
 
+use Nanigans\SingleTableInheritance\Tests\Fixtures\Video;
+use Nanigans\SingleTableInheritance\Tests\Fixtures\VideoType;
+use Nanigans\SingleTableInheritance\Tests\Fixtures\MP4Video;
+
 /**
  * Class SingleTableInheritanceTraitModelMethodsTest
  *
