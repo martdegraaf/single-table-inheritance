@@ -1,12 +1,16 @@
 {
-  "name": "nanigans/single-table-inheritance",
+  "name": "martdegraaf/single-table-inheritance",
   "description": "Single Table Inheritance Trait",
-  "keywords": ["single", "table", "inheritance", "laravel", "eloquent", "model"],
+  "keywords": ["single", "table", "inheritance", "laravel", "eloquent", "model", "enum"],
   "license": "MIT",
   "authors": [
     {
       "name": "Jon Palmer",
       "email": "jpalmer@nanigans.com"
+    },
+    {
+      "name": "Mart de Graaf",
+      "email": "mart@martdegraaf.nl"
     }
   ],
   "require": {
