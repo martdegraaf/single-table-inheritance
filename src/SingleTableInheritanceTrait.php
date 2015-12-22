@@ -151,7 +151,7 @@ trait SingleTableInheritanceTrait {
   public function setSingleTableType() {
     $modelClass = get_class($this);
     $classType = property_exists($modelClass, 'singleTableType') ? $modelClass::$singleTableType : null;
-    if ($classType) {
+    if ($classType !== null) {
       if ($this->hasGetMutator(static::$singleTableTypeField)) {
         $this->{static::$singleTableTypeField} = $this->mutateAttribute(static::$singleTableTypeField, $classType);
       } else {
