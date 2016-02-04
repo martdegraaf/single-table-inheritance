@@ -106,6 +106,11 @@ class SingleTableInheritanceTraitModelMethodsTest extends TestCase {
 
     $this->assertEquals('car', $car->getAttributes()['discriminator']);
   }
+  
+  public function testSetSingleTableTypeWithEnum() {
+    $video = new MP4Video();
+    $video->setSingleTableType();
+  }
 
   /**
    * @expectedException \Nanigans\SingleTableInheritance\Exceptions\SingleTableInheritanceException
